@@ -5,7 +5,7 @@
 	</div>
 	</div><!-- End Content -->
 	<footer>
-		<p>{$translations.footer.powered_by} <a href="http://www.jobberbase.com/" title="open source job board software">jobberBase</a> - Design by <a href="http://leduyquang.com" title="le duy quang">Le Duy Quang</a> - Base on Twitter Bootstrap</p>
+		<p>{$translations.footer.powered_by} <a href="http://www.jobberbase.com/" title="open source job board software">jobberBase</a> - Design by <a href="http://leduyquang.com" title="le duy quang">Le Duy Quang</a>.</p>
 	</footer>
 	
 	{literal}
