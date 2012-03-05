@@ -2,6 +2,7 @@
 
 - March 05 2012: Update V1.1
 
+  * Add _cache folder
   * Fix form not working
     - header.tpl (https://github.com/doobbe/Jobberbase-Bootstrap/commits/master/bootstrap/header.tpl)
       - 1404c18496dffe3f6d5cf3bc3ddb9710f87a80d0
