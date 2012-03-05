@@ -16,3 +16,5 @@
       - 6b0cf91ea09cfbdb32f2393a50a4a50a4832e010
       - 28888736f44d7b93efc8ca0546140e05c62df5ca
 
+
+(Notice: SHA Blog via Github exemple:https://github.com/doobbe/Jobberbase-Bootstrap/blob/SHA/bootstrap/css/custom.css)
