@@ -9,7 +9,15 @@ Installation
 ============
 
 Download - unzip and upload to jobberbase_url/_templates
+Create a folder call _cache on jobberbase_url/_templates/bootstrap/ (jobberbase_url/_templates/bootstrap/_cache)
 Go to admin panel - press Setting/Main setting and select [bootstrap] from [Theme] label --> Save
+
+
+Notice
+======
+
+Why the package didn't include _cache folder?
+ - I try to added but Github didn't allowed.
 
 Collaborators
 =============
