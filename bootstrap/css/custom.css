@@ -16,6 +16,7 @@
 	.topbar .brand {width: 200px;}
 	.topbar h1 {color: #ffffff;font-size: 20px;line-height: 1;margin-bottom: 1px;}
 	.topbar .customnav {float:right;margin-right:1px;}
+	.topbar li:hover ul {display: block;}
     /* Page header tweaks */
     .page-header {background-color: #F5EFE6;min-height:40px;padding: 20px 20px 10px;margin: -20px -20px 20px;}
 	.page-header .coll {width: 220px;float:left}
