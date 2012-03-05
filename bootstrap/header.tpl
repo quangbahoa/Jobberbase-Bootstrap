@@ -1,29 +1,29 @@
 {if $CURRENT_PAGE == 'page-unavailable' || $CURRENT_PAGE == 'job-unavailable'}
 	{php}header("HTTP/1.0 404 Not Found");{/php}
 {/if}
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>{if $seo_title}{$seo_title}{else}{$html_title}{/if}</title>
-    <meta name="description" content="{if $seo_desc}{$seo_desc}{else}{$meta_description}{/if}" />
-    <meta name="keywords" content="{if $seo_keys}{$seo_keys}{else}{$meta_keywords}{/if}" />
-	<meta name="generator" content="Jobberbase v{$smarty.const.JOBBERBASE_VERSION}" />
-    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
-	<link rel="shortcut icon" href="{$BASE_URL}favicon.ico" type="image/x-icon" />
+    <meta name="description" content="{if $seo_desc}{$seo_desc}{else}{$meta_description}{/if}">
+    <meta name="keywords" content="{if $seo_keys}{$seo_keys}{else}{$meta_keywords}{/if}">
+	<meta name="generator" content="Jobberbase v{$smarty.const.JOBBERBASE_VERSION}">
+    <meta charset="utf-8">
+	<link rel="shortcut icon" href="{$BASE_URL}favicon.ico" type="image/x-icon">
 	{if $CURRENT_PAGE == '' || $CURRENT_PAGE != 'jobs'}
-		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{$BASE_URL}rss/all/" />
+		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{$BASE_URL}rss/all/">
 	{else}
-		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{$BASE_URL}rss/{$current_category}/" />
+		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{$BASE_URL}rss/{$current_category}/">
 	{/if}
 	<!--[if !IE]><script src="{$BASE_URL}js/jquery.history.js" type="text/javascript"></script><![endif]-->
 	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-	<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
-    <script src="{$BASE_URL}_templates/{$THEME}/js/bootstrap-alerts.js"></script>
-    <script src="{$BASE_URL}_templates/{$THEME}/js/bootstrap-dropdown.js"></script>
-    <script src="{$BASE_URL}_templates/{$THEME}/js/bootstrap-buttons.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="{$BASE_URL}_templates/{$THEME}/js/bootstrap-alerts.js"></script>
+    <script type="text/javascript" src="{$BASE_URL}_templates/{$THEME}/js/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="{$BASE_URL}_templates/{$THEME}/js/bootstrap-buttons.js"></script>
 	<link href="{$BASE_URL}_templates/{$THEME}/css/bootstrap.css" rel="stylesheet">
 	<link href="{$BASE_URL}_templates/{$THEME}/css/custom.css" rel="stylesheet">
 	
