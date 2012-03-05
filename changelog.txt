@@ -3,6 +3,9 @@
 - March 05 2012: Update V1.1
 
   * Add _cache folder
+  * Fix Drop-down menu not working with jquery validate
+   - custom.css (https://github.com/doobbe/Jobberbase-Bootstrap/commits/master/bootstrap/css/custom.css)
+    - e85383a9bd319fffa690b9c3d4bdc1e37612a43b
   * Fix form not working
     - header.tpl (https://github.com/doobbe/Jobberbase-Bootstrap/commits/master/bootstrap/header.tpl)
       - 1404c18496dffe3f6d5cf3bc3ddb9710f87a80d0
