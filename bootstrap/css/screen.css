@@ -169,27 +169,6 @@ div#box div#search fieldset label
 	font-size:0.9em;
 }
 
-div#box .addJob
-{
-	position:absolute;
-	right:17px;
-	top:28px;
-}
-
-div#box .addJob a.add
-{
-	background:url(../img/bt-post.png) no-repeat 0 0;
-	display:block;
-	height:47px;
-	text-indent:-1000em;
-	width:182px;
-}
-
-div#box .addJob a.add:hover
-{
-	background:url(../img/bt-post.png) no-repeat -182px 0;
-}
-
 #content
 {
 	padding-right:10px;
@@ -985,17 +964,6 @@ div#sort-by-type a:hover
 	float:right;
 	font-size:11px;
 	padding-right:5px;
-}
-
-.spotlight-image
-{
-	background-image:url(../img/icon-spotlight.png);
-	background-repeat:no-repeat;
-	float:right;
-	height:11px;
-	margin:4px;
-	padding-right:5px;
-	width:77px;
 }
 
 #view_all
