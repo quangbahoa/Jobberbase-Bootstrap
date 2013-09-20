@@ -12,13 +12,13 @@
 			
 			{if $filter_error}
 			<div class="validation-failure">
-				<img src="{$BASE_URL}_templates/{$THEME}/img/icon-delete.png" alt="" />
+				<img src="{$BASE_URL}_tpl/{$THEME}/img/icon-delete.png" alt="" />
 				{$filter_error}
 			</div>
 			{/if}
 			{if $errors}
 			<div class="validation-failure">
-				<img src="{$BASE_URL}_templates/{$THEME}/img/icon-delete.png" alt="" />
+				<img src="{$BASE_URL}_tpl/{$THEME}/img/icon-delete.png" alt="" />
 				{$translations.publish.form_error}
 			</div>
 			{/if}
@@ -45,7 +45,7 @@
 						<tr>
 							<td>
 								<input type="text" name="title" id="title" class="span8" value="{if $job.company}{$job.title|escape}{else}{$smarty.post.title|escape}{/if}" placeholder="{$translations.publish.title_label}" />
-								{if $errors.title}<span class="validation-error"><img src="{$BASE_URL}_templates/{$THEME}/img/icon-delete.png" alt="" /></span>{/if}
+								{if $errors.title}<span class="validation-error"><img src="{$BASE_URL}_tpl/{$THEME}/img/icon-delete.png" alt="" /></span>{/if}
 								<div class="{$translations.publish.title_info}"></div>
 							</td>
 						</tr>
@@ -65,7 +65,7 @@
 						</tr>
 						<tr>
 							<td><textarea tabindex="4" name="description" id="description" rows="15" class="span8" placeholder="{$translations.publish.description_label} ">{if $job.company}{$job.description}{else}{$smarty.post.description}{/if}</textarea>
-								{if $errors.description}<span class="validation-error"><img src="{$BASE_URL}_templates/{$THEME}/img/icon-delete.png" alt="" /></span>{/if}
+								{if $errors.description}<span class="validation-error"><img src="{$BASE_URL}_tpl/{$THEME}/img/icon-delete.png" alt="" /></span>{/if}
 								<div class="suggestion">
 									<a target="_blank" href="http://www.textism.com/tools/textile/" onclick="$('#textile-suggestions').toggle(); return false;">{$translations.publish.description_info}</a></div>
 								<div id="textile-suggestions" style="display: none;">
@@ -127,7 +127,7 @@
 					<table border="0" cellspacing="2" cellpadding="2">
 						<tr>
 							<td><input tabindex="6" type="text" name="company" id="company" class="span8" value="{if $job.company}{$job.company|escape}{else}{$smarty.post.company|escape}{/if}" placeholder="{$translations.publish.name_label}" />
-							<span class="validation-error">{if $errors.company}<img src="{$BASE_URL}_templates/{$THEME}/img/icon-delete.png" alt="" />{/if}</span>
+							<span class="validation-error">{if $errors.company}<img src="{$BASE_URL}_tpl/{$THEME}/img/icon-delete.png" alt="" />{/if}</span>
 							</td>
 						</tr> 
 						<tr>
@@ -138,7 +138,7 @@
 						<tr>
 							<td>
 								<input tabindex="8" type="text" name="poster_email" id="poster_email" class="span8" value="{if $job.poster_email}{$job.poster_email}{else}{$smarty.post.poster_email}{/if}" placeholder="{$translations.publish.email_label} ({$translations.publish.email_info1})"/>
-								<span class="validation-error">{if $errors.poster_email}<img src="{$BASE_URL}_templates/{$THEME}/img/icon-delete.png" alt="" />{/if}</span>
+								<span class="validation-error">{if $errors.poster_email}<img src="{$BASE_URL}_tpl/{$THEME}/img/icon-delete.png" alt="" />{/if}</span>
 							</td>
 						</tr>
 					</table>
@@ -157,7 +157,7 @@
 					</script>
 					{/literal}
 					{$the_captcha} <span class="validation-error">{if $errors.captcha}
-					<img src="{$BASE_URL}_templates/{$THEME}/img/icon-delete.png" alt="" /> {$errors.captcha}{/if}</span>
+					<img src="{$BASE_URL}_tpl/{$THEME}/img/icon-delete.png" alt="" /> {$errors.captcha}{/if}</span>
 					</div>
 				</div>
 				{/if}
@@ -197,12 +197,12 @@
 						poster_email: { required: true, email: true }
 					},
 					messages: {
-                        type_id: ' <img src="{/literal}{$BASE_URL}_templates/{$THEME}/{literal}img/icon-delete.png" alt="" />',					   
-						company: ' <img src="{/literal}{$BASE_URL}_templates/{$THEME}/{literal}img/icon-delete.png" alt="" />',
-						title: ' <img src="{/literal}{$BASE_URL}_templates/{$THEME}/{literal}img/icon-delete.png" alt="" />',
-						location: ' <img src="{/literal}{$BASE_URL}_templates/{$THEME}/{literal}img/icon-delete.png" alt="" />',
-						description: ' <img src="{/literal}{$BASE_URL}_templates/{$THEME}/{literal}img/icon-delete.png" alt="" />',
-						poster_email: ' <img src="{/literal}{$BASE_URL}_templates/{$THEME}/{literal}img/icon-delete.png" alt="" />'
+                        type_id: ' <img src="{/literal}{$BASE_URL}_tpl/{$THEME}/{literal}img/icon-delete.png" alt="" />',
+						company: ' <img src="{/literal}{$BASE_URL}_tpl/{$THEME}/{literal}img/icon-delete.png" alt="" />',
+						title: ' <img src="{/literal}{$BASE_URL}_tpl/{$THEME}/{literal}img/icon-delete.png" alt="" />',
+						location: ' <img src="{/literal}{$BASE_URL}_tpl/{$THEME}/{literal}img/icon-delete.png" alt="" />',
+						description: ' <img src="{/literal}{$BASE_URL}_tpl/{$THEME}/{literal}img/icon-delete.png" alt="" />',
+						poster_email: ' <img src="{/literal}{$BASE_URL}_tpl/{$THEME}/{literal}img/icon-delete.png" alt="" />'
 					}
 				});
 			});

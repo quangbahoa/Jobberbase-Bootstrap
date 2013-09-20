@@ -20,15 +20,15 @@
 				<div id="contact-form-contents">
 					<form id="apply-online" method="post" action="{$BASE_URL}{$page.url}/">
 						<input type="text" name="contact_name" id="contact_name" class="span7" placeholder="{$translations.contact.name_label}" />
-						<span class="validation-error">{if $errors.contact_name}<img src="{$BASE_URL}_templates/{$THEME}/img/icon-delete.png" alt="" />{/if}</span>	
+						<span class="validation-error">{if $errors.contact_name}<img src="{$BASE_URL}_tpl/{$THEME}/img/icon-delete.png" alt="" />{/if}</span>
 						<br /><br />
 
 						<input type="text" name="contact_email" id="contact_email" class="span7" placeholder="{$translations.contact.email_label}" />
-						<span class="validation-error">{if $errors.contact_email}<img src="{$BASE_URL}_templates/{$THEME}/img/icon-delete.png" alt="" />{/if}</span>	
+						<span class="validation-error">{if $errors.contact_email}<img src="{$BASE_URL}_tpl/{$THEME}/img/icon-delete.png" alt="" />{/if}</span>
 						<br /><br />
 						
 						<textarea name="contact_msg" id="contact_msg" class="xxlarge" cols="50" rows="8" placeholder="{$translations.contact.message_label}" >{$smarty.post.contact_msg}</textarea>
-						<span class="validation-error">{if $errors.contact_msg}<img src="{$BASE_URL}_templates/{$THEME}/img/icon-delete.png" alt="" />{/if}</span>
+						<span class="validation-error">{if $errors.contact_msg}<img src="{$BASE_URL}_tpl/{$THEME}/img/icon-delete.png" alt="" />{/if}</span>
 						
 						{if $ENABLE_RECAPTCHA}
 							<br /><br />
@@ -41,7 +41,7 @@
 							</script>
 							{/literal}
 							{$the_captcha}
-							<span class="validation-error">{if $errors.captcha}<img src="{$BASE_URL}_templates/{$THEME}/img/icon-delete.png" alt="" /> {$errors.captcha}{/if}</span>
+							<span class="validation-error">{if $errors.captcha}<img src="{$BASE_URL}_tpl/{$THEME}/img/icon-delete.png" alt="" /> {$errors.captcha}{/if}</span>
 						{/if}
 						<br /><br />
 						<button type="submit" name="submit" id="submit" class="btn primary">{$translations.contact.submit}</button>
@@ -66,9 +66,9 @@
 						contact_msg: { required: true }
 					},
 					messages: {
-						contact_name: ' <img src="{/literal}{$BASE_URL}_templates/{$THEME}/{literal}img/icon-delete.png" alt="" />',
-						contact_email: ' <img src="{/literal}{$BASE_URL}_templates/{$THEME}/{literal}img/icon-delete.png" alt="" />',
-						contact_msg: ' <img src="{/literal}{$BASE_URL}_templates/{$THEME}/{literal}img/icon-delete.png" alt="" />'
+						contact_name: ' <img src="{/literal}{$BASE_URL}_tpl/{$THEME}/{literal}img/icon-delete.png" alt="" />',
+						contact_email: ' <img src="{/literal}{$BASE_URL}_tpl/{$THEME}/{literal}img/icon-delete.png" alt="" />',
+						contact_msg: ' <img src="{/literal}{$BASE_URL}_tpl/{$THEME}/{literal}img/icon-delete.png" alt="" />'
 					}
 				});
 			});
