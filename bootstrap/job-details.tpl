@@ -127,7 +127,6 @@
 				<div class="recent-jobs zebra-striped"><!-- Recent Jobs /-->	
 			{include file="company-posts-loop.tpl"}
 			</div><!-- End Recent Jobs /-->
-			</div><!-- End Recent Jobs /-->
 
 {literal}
 	<script type="text/javascript">

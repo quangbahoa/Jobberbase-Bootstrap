@@ -48,8 +48,8 @@
 						
 					</form>
 				</div><!-- #contact-form-contents -->
-				{/if}
 			</div><!-- #contact-form -->
+			{/if}
 			{/if}
 			
 		</div><!-- /content -->
