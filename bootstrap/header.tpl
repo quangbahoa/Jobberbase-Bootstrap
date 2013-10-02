@@ -107,11 +107,11 @@
 	<div class="container">
 	<div class="content">
 		  <div class="page-header">
-			{if $smarty.const.ENABLE_NEW_JOBS}		  
 			<div class="coll">
+			{if $smarty.const.ENABLE_NEW_JOBS}
 				<a href="{$BASE_URL}post/" class="btn large danger">{$translations.search.submit}</a>
-			</div>
 			{/if}
+			</div>
 			<div class="colr">
 				<form method="post" action="{$BASE_URL}search/">
 				<fieldset>
